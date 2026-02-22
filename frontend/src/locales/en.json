@@ -1,0 +1,153 @@
+{
+  "app": {
+    "name": "Survey Bot"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "update": "Update",
+    "create": "Create",
+    "close": "Close",
+    "search": "Search",
+    "actions": "Actions",
+    "yes": "Yes",
+    "no": "No",
+    "add": "Add",
+    "remove": "Remove",
+    "error": "An error occurred",
+    "saved": "Saved"
+  },
+  "auth": {
+    "login_title": "Sign in to your account",
+    "register_title": "Create a new account",
+    "verify_title": "Verify your email",
+    "forgot_title": "Forgot password",
+    "reset_title": "Reset your password",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "verification_code": "Verification code",
+    "forgot_password": "Forgot password?",
+    "no_account": "Don't have an account? Register",
+    "have_account": "Already have an account? Login",
+    "request_reset": "Request reset",
+    "reset_password": "Reset password"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "active_campaigns": "Active campaigns",
+    "total_responses": "Total responses",
+    "total_sessions": "Total participants",
+    "recent_campaigns": "Recent campaigns",
+    "create_campaign": "Create campaign"
+  },
+  "campaigns": {
+    "my_campaigns": "My campaigns",
+    "all_campaigns": "All campaigns",
+    "create_campaign": "Create campaign",
+    "no_campaigns": "No campaigns yet",
+    "title": "Title",
+    "description": "Description",
+    "status": "Status",
+    "start_date": "Start date",
+    "end_date": "End date",
+    "anonymous": "Anonymous",
+    "private": "Private",
+    "screening": "Screening",
+    "allowed_users": "Allowed users",
+    "add_user": "Add user",
+    "questions": "Questions",
+    "add_question": "Add question",
+    "options": "Options",
+    "add_option": "Add option",
+    "question_text": "Question text",
+    "question_type": "Question type",
+    "required": "Required",
+    "order_up": "Move up",
+    "order_down": "Move down",
+    "delete_question": "Delete question",
+    "screening_question": "Screening question",
+    "screening_options": "Allowed options"
+  },
+  "survey": {
+    "title": "Survey",
+    "thank_you": "Thank you for participating! You may close this page.",
+    "not_allowed": "You do not meet the criteria for this survey.",
+    "expired": "This survey has expired.",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "language": "Language",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "english": "English",
+    "french": "French",
+    "spanish": "Spanish",
+    "note": "Changes are applied immediately and persisted across sessions."
+  },
+  "profile": {
+    "title": "Profile",
+    "user_id": "User ID",
+    "login": "Username",
+    "role": "Role",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "email": "Email",
+    "reset_password": "Change password",
+    "logout": "Logout"
+  },
+  "logs": {
+    "title": "Audit logs",
+    "not_implemented": "The audit log feature is not available yet.",
+    "empty": "No logs yet.",
+    "time": "Time",
+    "action": "Action",
+    "user": "User",
+    "details": "Details"
+  },
+  "not_found": {
+    "message": "The page you are looking for does not exist.",
+    "back_home": "Return to dashboard"
+  },
+  "qr": {
+    "title": "QR Codes",
+    "subtitle": "Find the QR code and participant link for each campaign.",
+    "search_placeholder": "Search campaigns…",
+    "back_to_campaigns": "Campaigns",
+    "open": "Open",
+    "participant_link": "Participant link",
+    "copy": "Copy",
+    "copied": "Link copied",
+    "copy_failed": "Could not copy the link",
+    "download_pdf": "Download PDF",
+    "download_png": "Download PNG",
+    "test_survey": "Test survey",
+    "no_campaigns": "No campaigns found.",
+    "no_session": "No session found for this campaign.",
+    "load_failed": "Failed to load QR codes",
+    "chart_type": "Chart type"
+  },
+  "campaign": {
+    "access": {
+      "public_note": "This campaign is public. Access restrictions only apply when the campaign is private.",
+      "tip_private": "Tip: enable “Private campaign” to restrict access to a specific list of users.",
+      "add_email": "Add an allowed user (email)",
+      "creator_note": "Creator is always allowed: {{email}}",
+      "creator_already_allowed": "The creator is already allowed.",
+      "already_added": "This email is already in the list.",
+      "empty": "No allowed users yet."
+    }
+  }
+}

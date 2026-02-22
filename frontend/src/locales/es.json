@@ -1,0 +1,135 @@
+{
+  "app": {
+    "name": "Survey Bot"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "update": "Actualizar",
+    "create": "Crear",
+    "close": "Cerrar",
+    "search": "Buscar",
+    "actions": "Acciones",
+    "yes": "Sí",
+    "no": "No",
+    "add": "Agregar",
+    "remove": "Quitar",
+    "error": "Ocurrió un error",
+    "saved": "Guardado"
+  },
+  "auth": {
+    "login_title": "Iniciar sesión en su cuenta",
+    "register_title": "Crear una nueva cuenta",
+    "verify_title": "Verifique su correo electrónico",
+    "forgot_title": "Olvidó su contraseña",
+    "reset_title": "Restablezca su contraseña",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "logout": "Cerrar sesión",
+    "email": "Correo electrónico",
+    "username": "Usuario",
+    "password": "Contraseña",
+    "confirm_password": "Confirmar contraseña",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "verification_code": "Código de verificación",
+    "forgot_password": "¿Olvidó la contraseña?",
+    "no_account": "¿No tiene cuenta? Regístrese",
+    "have_account": "¿Ya tiene una cuenta? Iniciar sesión",
+    "request_reset": "Solicitar restablecimiento",
+    "reset_password": "Restablecer contraseña"
+  },
+  "dashboard": {
+    "title": "Tablero",
+    "active_campaigns": "Campañas activas",
+    "total_responses": "Respuestas totales",
+    "total_sessions": "Participantes totales",
+    "recent_campaigns": "Campañas recientes",
+    "create_campaign": "Crear campaña"
+  },
+  "campaigns": {
+    "my_campaigns": "Mis campañas",
+    "all_campaigns": "Todas las campañas",
+    "create_campaign": "Crear campaña",
+    "no_campaigns": "No hay campañas aún",
+    "title": "Título",
+    "description": "Descripción",
+    "status": "Estado",
+    "start_date": "Fecha de inicio",
+    "end_date": "Fecha de finalización",
+    "anonymous": "Anónima",
+    "private": "Privada",
+    "screening": "Filtro",
+    "allowed_users": "Usuarios autorizados",
+    "add_user": "Agregar usuario",
+    "questions": "Preguntas",
+    "add_question": "Agregar pregunta",
+    "options": "Opciones",
+    "add_option": "Agregar opción",
+    "question_text": "Texto de la pregunta",
+    "question_type": "Tipo de pregunta",
+    "required": "Obligatoria",
+    "order_up": "Subir",
+    "order_down": "Bajar",
+    "delete_question": "Eliminar pregunta",
+    "screening_question": "Pregunta de filtro",
+    "screening_options": "Opciones permitidas"
+  },
+  "survey": {
+    "title": "Encuesta",
+    "thank_you": "¡Gracias por participar! Puede cerrar esta página.",
+    "not_allowed": "No cumple con los criterios para esta encuesta.",
+    "expired": "Esta encuesta ha expirado.",
+    "next": "Siguiente",
+    "submit": "Enviar"
+  },
+  "settings": {
+    "title": "Configuración",
+    "theme": "Tema",
+    "language": "Idioma",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "english": "Inglés",
+    "french": "Francés",
+    "spanish": "Español",
+    "note": "Los cambios se aplican inmediatamente y se guardan."
+  },
+  "profile": {
+    "title": "Perfil",
+    "user_id": "ID de usuario",
+    "login": "Usuario",
+    "role": "Rol",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "email": "Correo electrónico",
+    "reset_password": "Cambiar contraseña",
+    "logout": "Cerrar sesión"
+  },
+  "logs": {
+    "title": "Registros de auditoría",
+    "not_implemented": "La función de registro de auditoría aún no está disponible.",
+    "empty": "Aún no hay registros.",
+    "time": "Fecha/hora",
+    "action": "Acción",
+    "user": "Usuario",
+    "details": "Detalles"
+  },
+  "not_found": {
+    "message": "La página que buscas no existe.",
+    "back_home": "Volver al tablero"
+  },
+  "campaign": {
+    "access": {
+      "public_note": "Esta campaña es pública. Las restricciones de acceso solo aplican cuando la campaña es privada.",
+      "tip_private": "Consejo: activa “Campaña privada” para restringir el acceso a una lista de usuarios.",
+      "add_email": "Agregar usuario permitido (email)",
+      "creator_note": "El creador siempre está permitido: {{email}}",
+      "creator_already_allowed": "El creador ya está permitido.",
+      "already_added": "Este email ya está en la lista.",
+      "empty": "Aún no hay usuarios permitidos."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+body {
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+}
+/* Light float for KPI donuts */
+@keyframes kpiFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+/* WhatsApp-like subtle pattern backgrounds */
+.bg-whatsapp-light {
+  background-color: #efeae2;
+  background-image:
+    radial-gradient(circle at 10px 10px, rgba(0,0,0,0.03) 2px, transparent 2px),
+    radial-gradient(circle at 30px 30px, rgba(0,0,0,0.02) 2px, transparent 2px);
+  background-size: 40px 40px;
+}
+
+.bg-whatsapp-dark {
+  background-color: #0b141a;
+  background-image:
+    radial-gradient(circle at 12px 12px, rgba(255,255,255,0.06) 2px, transparent 2px),
+    radial-gradient(circle at 34px 34px, rgba(255,255,255,0.04) 2px, transparent 2px);
+  background-size: 44px 44px;
+}

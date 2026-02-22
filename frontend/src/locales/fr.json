@@ -1,0 +1,153 @@
+{
+  "app": {
+    "name": "Survey Bot"
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Éditer",
+    "update": "Mettre à jour",
+    "create": "Créer",
+    "close": "Fermer",
+    "search": "Recherche",
+    "actions": "Actions",
+    "yes": "Oui",
+    "no": "Non",
+    "add": "Ajouter",
+    "remove": "Retirer",
+    "error": "Une erreur est survenue",
+    "saved": "Enregistré"
+  },
+  "auth": {
+    "login_title": "Connexion à votre compte",
+    "register_title": "Créer un nouveau compte",
+    "verify_title": "Vérifiez votre email",
+    "forgot_title": "Mot de passe oublié",
+    "reset_title": "Réinitialisez votre mot de passe",
+    "login": "Connexion",
+    "register": "Inscription",
+    "logout": "Déconnexion",
+    "email": "Email",
+    "username": "Identifiant",
+    "password": "Mot de passe",
+    "confirm_password": "Confirmer le mot de passe",
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "verification_code": "Code de vérification",
+    "forgot_password": "Mot de passe oublié ?",
+    "no_account": "Pas de compte ? Inscrivez‑vous",
+    "have_account": "Vous avez déjà un compte ? Connectez‑vous",
+    "request_reset": "Demander une réinitialisation",
+    "reset_password": "Réinitialiser le mot de passe"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "active_campaigns": "Campagnes actives",
+    "total_responses": "Réponses totales",
+    "total_sessions": "Participants totaux",
+    "recent_campaigns": "Campagnes récentes",
+    "create_campaign": "Créer une campagne"
+  },
+  "campaigns": {
+    "my_campaigns": "Mes campagnes",
+    "all_campaigns": "Toutes les campagnes",
+    "create_campaign": "Créer une campagne",
+    "no_campaigns": "Aucune campagne pour l'instant",
+    "title": "Titre",
+    "description": "Description",
+    "status": "Statut",
+    "start_date": "Date de début",
+    "end_date": "Date de fin",
+    "anonymous": "Anonyme",
+    "private": "Privée",
+    "screening": "Filtrage",
+    "allowed_users": "Utilisateurs autorisés",
+    "add_user": "Ajouter un utilisateur",
+    "questions": "Questions",
+    "add_question": "Ajouter une question",
+    "options": "Options",
+    "add_option": "Ajouter une option",
+    "question_text": "Texte de la question",
+    "question_type": "Type de question",
+    "required": "Obligatoire",
+    "order_up": "Monter",
+    "order_down": "Descendre",
+    "delete_question": "Supprimer la question",
+    "screening_question": "Question de filtrage",
+    "screening_options": "Options autorisées"
+  },
+  "survey": {
+    "title": "Enquête",
+    "thank_you": "Merci pour votre participation ! Vous pouvez fermer cette page.",
+    "not_allowed": "Vous ne remplissez pas les critères pour cette enquête.",
+    "expired": "Cette enquête est expirée.",
+    "next": "Suivant",
+    "submit": "Envoyer"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "theme": "Thème",
+    "language": "Langue",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "english": "Anglais",
+    "french": "Français",
+    "spanish": "Espagnol",
+    "note": "Les modifications sont appliquées immédiatement et sont enregistrées."
+  },
+  "profile": {
+    "title": "Profil",
+    "user_id": "Identifiant",
+    "login": "Identifiant",
+    "role": "Rôle",
+    "first_name": "Prénom",
+    "last_name": "Nom",
+    "email": "Email",
+    "reset_password": "Changer le mot de passe",
+    "logout": "Déconnexion"
+  },
+  "logs": {
+    "title": "Journaux d’audit",
+    "not_implemented": "La fonctionnalité de journal d’audit n’est pas encore disponible.",
+    "empty": "Aucun log pour le moment.",
+    "time": "Date/heure",
+    "action": "Action",
+    "user": "Utilisateur",
+    "details": "Détails"
+  },
+  "not_found": {
+    "message": "La page que vous recherchez n'existe pas.",
+    "back_home": "Retour au tableau de bord"
+  },
+  "qr": {
+    "title": "QR Codes",
+    "subtitle": "Retrouvez le QR code et le lien participant pour chaque campagne.",
+    "search_placeholder": "Rechercher une campagne…",
+    "back_to_campaigns": "Mes campagnes",
+    "open": "Ouvrir",
+    "participant_link": "Lien participant",
+    "copy": "Copier",
+    "copied": "Lien copié",
+    "copy_failed": "Impossible de copier le lien",
+    "download_pdf": "Télécharger PDF",
+    "download_png": "Télécharger PNG",
+    "test_survey": "Tester le survey",
+    "no_campaigns": "Aucune campagne trouvée.",
+    "no_session": "Aucune session trouvée pour cette campagne.",
+    "load_failed": "Impossible de charger les QR codes",
+    "chart_type": "Type de diagramme"
+  },
+  "campaign": {
+    "access": {
+      "public_note": "Cette campagne est publique. Les restrictions d’accès ne s’appliquent que si la campagne est privée.",
+      "tip_private": "Astuce : activez « Campagne privée » pour limiter l’accès à une liste d’utilisateurs.",
+      "add_email": "Ajouter un utilisateur autorisé (email)",
+      "creator_note": "Le créateur est toujours autorisé : {{email}}",
+      "creator_already_allowed": "Le créateur est déjà autorisé.",
+      "already_added": "Cet email est déjà dans la liste.",
+      "empty": "Aucun utilisateur autorisé pour le moment."
+    }
+  }
+}
