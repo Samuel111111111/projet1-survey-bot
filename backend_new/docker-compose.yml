@@ -1,0 +1,62 @@
+
+services:
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Fallback values are defined in the .env file. Override here only if missing.
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-survey_bot}
+      MYSQL_USER: ${MYSQL_USER:-survey_user}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-survey_password}
+    volumes:
+      - surveybot_db_data:/var/lib/mysql
+    # Expose MySQL on a configurable host port (default to 3306). You can change
+    # MYSQL_HOST_PORT in your .env file to avoid port conflicts on your machine.
+    ports:
+      - "${MYSQL_HOST_PORT:-3306}:3306"
+
+    # Healthcheck ensures the database is ready before dependent services start.
+    # The test pings MySQL using the configured user and password. Adjust the
+    # credentials if you change MYSQL_USER/MYSQL_PASSWORD. The database service
+    # is considered healthy only after MySQL starts accepting connections.
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "${MYSQL_USER:-survey_user}", "-p${MYSQL_PASSWORD:-survey_password}"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  backend:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      # Wait for the db service to be healthy before starting the backend.
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      # When DATABASE_URI is not provided externally, construct it from
+      # individual components defined in .env. SQLAlchemy will connect using
+      # these credentials. If DATABASE_URI is set in .env, it takes precedence.
+      DATABASE_URI: ${DATABASE_URI:-mysql+pymysql://${MYSQL_USER:-survey_user}:${MYSQL_PASSWORD:-survey_password}@db:3306/${MYSQL_DATABASE:-survey_bot}}
+      # Flask configuration profile (default to production). Valid options:
+      # development, production, testing
+      FLASK_CONFIG: ${FLASK_CONFIG:-production}
+      # The host and port that Flask should bind to inside the container
+      FLASK_RUN_HOST: 0.0.0.0
+      FLASK_RUN_PORT: 5000
+    ports:
+      - "${BACKEND_HOST_PORT:-5000}:5000"
+    # Mount the entire project directory into /app in the container. This ensures
+    # that run.py and all modules are available. Do not mount ./app separately
+    # because that would hide run.py from the container.
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: ["python", "run.py"]
+
+volumes:
+  surveybot_db_data:
